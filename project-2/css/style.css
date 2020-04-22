@@ -20,6 +20,11 @@ html, body{
     margin: 0 auto;
 }
 
+.w50{
+    width: 50%;
+    padding: 0 2%;
+}
+
 /* header starts here */
 
 header{
@@ -153,6 +158,45 @@ header{
 
 /* form ends here */
 
+/* about starts here */
+
+section.about{
+    padding: 30px 0;
+}
+
+.about-infor{
+    float: left;
+    padding: 40px 0;
+}
+
+.about-infor h2{
+    font-size: 28px;
+}
+
+.about-infor p{
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.img-wraper{
+    padding: 40px 2%;
+    float: left;
+}
+
+.img-wraper img{
+    float: right;
+    width: 70%;
+    max-width: 500px;
+}
+
+/* about ends here */
+
+@media screen and (max-width: 1024px){
+    .img-wraper img{
+        width: 100%;
+    } 
+}
+
 @media screen and (max-width: 768px){
     .menu-desktop{
         display: none;
@@ -160,5 +204,24 @@ header{
 
     .menu-mobile{
         display: block;
+    }
+
+    .form-wraper{
+        width: 93%;
+    }
+
+    .about-infor{
+        width: 100%;
+    }
+
+    .img-wraper{
+        width: 100%;
+    }
+    
+    .img-wraper img{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 75%;
     }
 }
