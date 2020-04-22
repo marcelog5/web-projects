@@ -15,4 +15,47 @@ html, body{
 .container{
     width: 100%;
     max-width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgb(3, 3, 112);
+}
+
+.logo{
+    float: left;
+}
+
+.logo h2{
+    color: rgb(230,230,230);
+    font-size: 28px;
+}
+
+.menu-desktop{
+    float: right;
+}
+
+.menu-desktop ul{
+    list-style: none;
+}
+
+.menu-desktop ul li{
+    float: left;
+    padding: 0 30px;
+}
+
+.menu-desktop ul li a{
+    text-decoration: none;
+    color: rgb(230,230,230);
+    font-size: 20px;
+}
+
+.menu-mobile{
+    float: left;
+}
+
+.menu-mobile ul{
+    display: none;
 }
