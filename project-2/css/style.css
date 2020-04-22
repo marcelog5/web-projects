@@ -191,6 +191,60 @@ section.about{
 
 /* about ends here */
 
+/* specialties starts here */
+
+section.specialties{
+    padding: 60px 0;
+    width: 100%;
+    background-color: #e2e2e2;
+}
+
+section.specialties .container > h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: normal;
+    font-size: 36px;
+    color: #404580;
+}
+
+.technology-wraper{
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 20px;
+}
+
+.technology-wraper .technology-logo{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/css.png");
+    background-size: 100% 100%;
+}
+
+.technology-wraper:nth-of-type(2) .technology-logo{
+    background-image: url("../images/html-5.png");
+}
+
+.technology-wraper:nth-of-type(3) .technology-logo{
+    background-image: url("../images/javascript.png");
+}
+
+.technology-wraper h2{
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    color: #404580;
+}
+
+.technology-wraper p{
+    font-size: 16px;
+    text-align: center;
+}
+
+/* specialties ends here */
+
 @media screen and (max-width: 1024px){
     .img-wraper img{
         width: 100%;
@@ -223,5 +277,12 @@ section.about{
         display: block;
         margin: 0 auto;
         width: 75%;
+    }
+
+    .technology-wraper{
+        float: none;
+        width: 100%;
+        padding: 0 2%;
+        margin-top: 30px;
     }
 }
