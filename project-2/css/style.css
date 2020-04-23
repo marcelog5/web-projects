@@ -266,6 +266,7 @@ section.specialties .container > h2{
 
 .testimony-single{
     margin-top: 20px;
+    border-bottom: 1px solid #5056a0;
 }
 
 .testimony-single h2{

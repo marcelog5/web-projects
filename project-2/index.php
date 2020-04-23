@@ -1,3 +1,5 @@
+<?php include('config.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +9,7 @@
     <meta name="keywords" content="site,dogs"/>
     <meta name="description" content="project-2"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="<?php echo INCLUDE_PATH;?>css/style.css" rel="stylesheet"/>
     <title>project-2</title>
 </head>
 <body>
@@ -20,19 +22,19 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH;?>">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH;?>about">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH;?>services">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH;?>contact">Contato</a></li>
                 </ul>
             </nav><!--menu-desktop-->
 
             <nav class="menu-mobile">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH;?>">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH;?>about">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH;?>services">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH;?>contact">Contato</a></li>
                 </ul>
             </nav><!--menu-mobile-->
         </div><!--container-->
@@ -86,7 +88,7 @@
             </div><!--about-infor-->
 
             <div class="w50 img-wraper">
-                <img src="images/dogao.jpeg"/>
+                <img src="<?php echo INCLUDE_PATH;?>images/dogao.jpeg"/>
             </div><!--img-wraper-->
             <div class="clear"></div><!--clear-->
         </div><!--container-->
@@ -217,6 +219,9 @@
             <p>Todos os direitos reservados</p>
         </div><!--container-->
     </footer>
+
+    <script src="<?php echo INCLUDE_PATH;?>js/jquery-3.5.0.min.js"></script>
+    <script src="<?php echo INCLUDE_PATH;?>js/scripts.js"></script>
 
 </body>
 </html>
