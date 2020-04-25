@@ -13,6 +13,20 @@
     <title>project-2</title>
 </head>
 <body>
+
+    <?php 
+        $url = isset($_GET['url']) ? $_GET['url'] : 'home';
+
+        switch($url){
+            case 'about':
+                echo '<target target="about" />';
+                break;
+
+            case 'services':
+                echo '<target target="services" />';
+                break;
+        }
+    ?>
     
     <header>
         <div class="container">
@@ -48,8 +62,12 @@
         if(file_exists('pages/'.$url.'.php')){
             include('pages/'.$url.'.php');
         }else{
-            $page404 = true;
-            include('pages/404.php');
+            if($url != 'about' && $url != 'services'){
+                $page404 = true;
+                include('pages/404.php');
+            }else{
+                include('pages/home.php');
+            }
         }
 
     ?>

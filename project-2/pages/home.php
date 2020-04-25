@@ -14,7 +14,7 @@
         </div><!--container-->
     </section><!--form-bg-->
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="w50 about-infor">
                 <h2>Lorem ipsum dolor</h2>
@@ -136,7 +136,7 @@
                 </div><!--testimony-single-->
             </div><!--testimony-->
 
-            <div class="services w50">
+            <div id="services" class="services w50">
                 <h2>Serviços</h2>
 
                 <ul>

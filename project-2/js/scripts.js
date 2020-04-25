@@ -12,4 +12,15 @@ $(function(){
             
     });
 
+    //Auto Scroll in home
+
+    if ($('target').length > 0) {
+        var element = '#' + $('target ').attr('target');
+        var scrollDiv = $(element).offset().top;
+
+        $('html, body').animate({
+            'scrollTop': scrollDiv
+        },1000);
+    }
+
 });
