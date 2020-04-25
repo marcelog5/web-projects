@@ -63,5 +63,14 @@
     <script src="<?php echo INCLUDE_PATH;?>js/jquery-3.5.0.min.js"></script>
     <script src="<?php echo INCLUDE_PATH;?>js/scripts.js"></script>
 
+    <?php 
+        if($url == 'contact'){
+    ?>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx8sh_HlLuleKqI2-ujHXj3P4jZfhnSUQ"></script>
+    <script src="<?php echo INCLUDE_PATH;?>js/initMaps.js"></script>
+    <?php
+        }
+    ?>
+
 </body>
 </html>
